@@ -17,7 +17,7 @@ const DeliveryPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://18.231.150.111:5000/api/products2")
+      .get("http://18.228.172.186:5000/api/products2")
       .then((response) => {
         const uniqueOptions = Array.from(
           new Set(response.data.map((item) => item.selectedOption))
@@ -48,7 +48,7 @@ const DeliveryPage = () => {
     }
 
     axios
-      .post("http://18.231.150.111:5000/api/save/despatch", {
+      .post("http://18.228.172.186:5000/api/save/despatch", {
         selectedOption: selectedValue,
         inputValue: inputValue,
         godownName: displayedGodownName,
@@ -78,7 +78,7 @@ const DeliveryPage = () => {
     setIsStarted(true);
 
     axios
-      .post("http://18.231.150.111:5000/api/save/despatch", {
+      .post("http://18.228.172.186:5000/api/save/despatch", {
         selectedOption: selectedValue,
         inputValue: inputValue,
         godownName: displayedGodownName,
@@ -97,7 +97,7 @@ const DeliveryPage = () => {
       const timer = setTimeout(() => {
         if (isGodownNameMatched()) {
           axios
-            .post("http://18.231.150.111:5000/api/save/despatch", {
+            .post("http://18.228.172.186:5000/api/save/despatch", {
               selectedOption: selectedValue,
               inputValue: inputValue,
               godownName: displayedGodownName,
