@@ -163,7 +163,7 @@ const QRCreater = () => {
     };
 
     try {
-      const response = await axios.post("http://18.230.117.159:5000/api/saved", formData);
+      const response = await axios.post("http://15.228.99.211:5000/api/saved", formData);
       alert(response.data.message);
     } catch (error) {
       console.error("Error saving data:", error);
