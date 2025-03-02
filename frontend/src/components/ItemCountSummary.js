@@ -11,7 +11,7 @@ const ItemCountSummary = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://18.230.117.159:5000/selects");
+      const response = await axios.get("http://15.228.99.211:5000/selects");
       setData(response.data);
     } catch (error) {
       console.log("Error fetching data: ", error);
