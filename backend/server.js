@@ -453,7 +453,7 @@ app.post("/api/save/select", async (req, res) => {
 
 
 // API to save data
-app.post("/api/save", async (req, res) => {
+app.post("/api/saved", async (req, res) => {
   try {
     const newBarcode = new Barcode(req.body);
     await newBarcode.save();
