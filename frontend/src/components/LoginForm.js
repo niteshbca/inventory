@@ -12,7 +12,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://18.228.172.186:5000/api/login', { name, address });
+      const response = await axios.post('http://18.230.117.159:5000/api/login', { name, address });
 
       if (response.data.success) {
         navigate('/godownpage', { state: { godown: { name, address } } });
