@@ -7,7 +7,7 @@ const History = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://18.230.117.159:5000/api/data');
+        const response = await axios.get('http://15.228.99.211:5000/api/data');
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
